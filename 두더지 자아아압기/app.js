@@ -15,7 +15,7 @@ let countdownTimer;
 for (let i=0; i<9; i++) {
     const square = document.createElement("div");
     square.classList.add("square");
-    grid.appendChlid(square);
+    grid.appendChild(square);
 }
 square = document.querySelectorAll(".square");
 
@@ -55,3 +55,16 @@ for(let i=0; i<9; i++){
     })
     
 }
+
+function countdown() {
+    currentTime--;
+    timeLeft.textContent = currentTime;
+
+    if(currentTime ==0){
+        clearInterval(timer)
+        clearInterval(countdownTimer)
+        alert("GAME OVER! Score : "+ result)
+    }
+}
+
+countdownTimer = setInterval(countdown, 1000)
