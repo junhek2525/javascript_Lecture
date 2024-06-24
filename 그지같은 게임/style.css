@@ -14,8 +14,6 @@ body{
     border-bottom: none;
 }
 .container div {
-
-
     width: 200px;
     height: auto;
     font-size: 25px;
@@ -23,7 +21,6 @@ body{
 }
 .container button{
     width: 100px;
-    border: solid black;
 }
 .grid{
     display: flex;
